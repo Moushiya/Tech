@@ -877,7 +877,7 @@ footer .btn:hover {
 		text-align: center;
 	}
 	.quote p {
-		font-size: 30px;
+		font-size: 100px;
 	}
 	.service-container .right-side img {
 		width: 90%;
@@ -905,3 +905,269 @@ footer .btn:hover {
 		width: 100%;
 	}
 }
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: .7rem;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: 0 0 .4rem rgba(0, 0, 0, 0.288) inset;
+  background-color: var(--white);
+  border-radius: 5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--purple);
+  border-radius: 7rem;
+}
+
+:root {
+
+    /* Theme Colors */
+    --black: #c46868;
+    --white: #fff;
+    --purple: rgb(98, 0, 255);
+    --hover-bg: rgb(143, 73, 255);
+  
+    /* Theme Fonts */
+    --font-family-1: 'Lato', sans-serif;
+    --font-family-2: 'Gideon Roman', cursive;
+  }
+.social-media-icons {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transition: translateY(-50%);
+  }
+  
+  .social-media-icons span {
+    display: block;
+    width: 4rem;
+    height: 4.5rem;
+    display: grid;
+    place-items: center;
+    background-color: var(--purple);
+    color: var(--white);
+    font-size: 2.8rem;
+    transition: all 0.3s linear;
+    cursor: pointer;
+  }
+  
+  @media (hover:hover) {
+  
+    .social-media-icons span:hover {
+      background-color: var(--white);
+      color: var(--red)
+    }
+  
+    .social-media-icons span:hover>a {
+      color: var(--purple)
+    }
+  
+  
+  }
+
+
+  html {
+	font-size: 75%;
+	/* Now 1rem = 10px */
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+  }
+.common-lines-box {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+  }
+  
+  .common-small-box {
+	display: inline-block;
+	border-radius: 3px;
+	width: 1.5rem;
+	height: 1.5rem;
+	background-color: var(--purple);
+  }
+  
+  .common-line1,
+  .common-line2 {
+	display: inline-block;
+	width: 10rem;
+	margin-top: 1rem;
+	height: 3px;
+	background-color: var(--black);
+  }
+  
+  .common-line2 {
+	width: 15rem;
+  }
+  
+  .testimonials-box { margin-bottom: 50px; }
+
+.testimonial-card {
+  padding: 30px 20px;
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.testimonial-banner {
+  margin: auto;
+  margin-bottom: 20px;
+  border-radius: 50%;
+}
+
+.testimonial-name {
+  font-weight: var(--weight-700);
+  text-transform: uppercase;
+  color: var(--sonic-silver);
+  margin-bottom: 5px;
+}
+
+.testimonial-title {
+  color: var(--onyx);
+  font-size: var(--fs-7);
+  margin-bottom: 15px;
+}
+
+.quotation-img {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.testimonial-desc {
+  max-width: 70%;
+  margin: auto;
+  color: var(--sonic-silver);
+  font-size: var(--fs-7);
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #CTA
+\*-----------------------------------*/
+
+.cta-container {
+  position: relative;
+  aspect-ratio: 5 / 6;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+  margin-bottom: 25px;
+}
+
+.cta-banner {
+  width: 50%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.cta-content {
+  background: hsla(0, 0%, 100%, 0.7);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: var(--border-radius-sm);
+}
+
+.cta-content .discount {
+  background: var(--eerie-black);
+  color: var(--white);
+  font-size: var(--fs-11);
+  font-weight: var(--weight-600);
+  text-transform: uppercase;
+  width: max-content;
+  margin: auto;
+  padding: 0 5px;
+  border-radius: var(--border-radius-sm);
+  margin-bottom: 5px;
+}
+
+.cta-title {
+  color: var(--onyx);
+  font-size: var(--fs-5);
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.cta-text {
+  color: var(--sonic-silver);
+  font-size: var(--fs-7);
+  margin-bottom: 5px;
+}
+
+.cta-btn {
+  font-size: var(--fs-9);
+  color: var(--sonic-silver);
+  text-transform: uppercase;
+  font-weight: var(--weight-700);
+  margin: auto;
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px 15px;
+  border: 1px solid var(--cultured);
+  border-radius: var(--border-radius-md);
+}
+
+.service-item {
+  min-width: 190px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.service-icon {
+  font-size: 35px;
+  color: var(--salmon-pink);
+  transition: var(--transition-timing);
+}
+
+.service-icon ion-icon { --ionicon-stroke-width: 25px; }
+
+.service-item:hover .service-icon { color: var(--eerie-black); }
+
+.service-title {
+  color: var(--sonic-silver);
+  font-size: var(--fs-7);
+  font-weight: var(--weight-600);
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+
+.service-desc {
+  color: var(--sonic-silver);
+  font-size: var(--fs-9);
+}
+
+body {
+    background-image: url('images/courses/im.1.jpg');
+    background-size: cover; /* Adjusts the background image size to cover the entire element */
+    /* Optionally, you can add more properties like background-repeat, background-position, etc. */
+}
+
